@@ -1,7 +1,4 @@
 import java.util.Scanner;
-import java.io.*;
-import java.util.*;
-
 
 public class Main { //    En klass som räknar raderna, har koll på antalet tecken
     public static void main(String[] args) {
@@ -37,18 +34,6 @@ public class Main { //    En klass som räknar raderna, har koll på antalet tec
             System.out.println("Longest word in last row (before stop row) is: " + myInput_Words.GetLongestWords() + " and the length is " + myInput_Words.GetLongestWordsLength());
             System.out.println("Longest word in ALL rows (before stop row) is: " + myInput_Words.GetTotalLongestWords() + " and the length is " + myInput_Words.GetTotalLongestLength());
 
-            System.exit(0);
+            }
         }
-
-//public string getLongestWord()a
-        //     {
-        //String text = findLongestWord();
-        //    }
-
-        //  function findLongestWord(str) {
-        //    var longestWord = str.split(' ').sort(function(a, b) { return b.length - a.length; });
-        //return longestWord[0].length;
-
-    }
-
-}
+   }

@@ -6,16 +6,13 @@ import java.util.List;
 
         int Amount_of_Rows,  Total_Amount_of_Words, Amount_of_Words, Amount_of_Chars, Total_Amount_of_Chars,
                 Length_of_Longest_words, Length_of_Total_Longest_words;
-        ;
-        String Longest_Word, Longest_Total_Word;
-        String LongWords[] ;
-        List<String> Word_Long_Total = new ArrayList<String>();
+                String Longest_Word, Longest_Total_Word;
+                List<String> Word_Long_Total = new ArrayList<String>();
 
         public Read()
         {
-            Amount_of_Words = 0;
-            Longest_Word = Longest_Total_Word = "";
             Amount_of_Rows = 0;
+            Longest_Word = Longest_Total_Word = "";
             Amount_of_Chars = Total_Amount_of_Chars = 0;
             Amount_of_Words = Total_Amount_of_Words = 0;
             Length_of_Longest_words = Length_of_Total_Longest_words = 0;
@@ -69,8 +66,8 @@ import java.util.List;
 
         public void SetWords(String InputReader)
         {
-            InputReader = InputReader.trim();
-           Amount_of_Words = InputReader.split("\\s+").length;
+            InputReader = InputReader.trim(); // removes whitespace from both ends of a string
+           Amount_of_Words = InputReader.split("\\s+").length; // split("\\s+") will split the string into string of array with separator as space or multiple spaces. \s+ is a regular expression for one or more spaces
         }
 
         public int GetWordsCount()
@@ -138,22 +135,10 @@ import java.util.List;
             //List<String> Word_Long_Total = new ArrayList<String>();
 
             System.out.println("current longest: " + Long_Word );
-            // String LongWords[] = Long_Word.split("");
 
-            //Longest_Total_Word = LongWords[0];
-            //System.out.println("first word : " + LongWords[0] );
-
-            // Array list of Strings skapad
             Word_Long_Total.add(Long_Word); //addera InputReader value till Array list
             System.out.println("Longest words in each row" + Word_Long_Total);
 
-           // int longest = 0;
-            //for(String word : Word_Long_Total) {
-              //  if (word.length() > longest) {
-                //    longest = word.length();
-
-                //}
-           // }
 
             Length_of_Total_Longest_words = Word_Long_Total.get(0).length();
             int index = 0;
@@ -166,13 +151,11 @@ import java.util.List;
                     Length_of_Total_Longest_words = Word_Long_Total.get(i).length();
                     index = i;
                 }
-
             }
-            // Output largest String and index it was found at
-            Longest_Total_Word = Word_Long_Total.get(index);
+
+            Longest_Total_Word = Word_Long_Total.get(index); // The largest String among all Strings and index it was found at
             System.out.println( Longest_Total_Word + " " + "is the largest and is size " + Length_of_Total_Longest_words);
-             //Length_of_Longest_words = longest;
-           // System.out.println("Longest word for all rows  and length is : "  + Longest_Total_Word);
+
         }
 
 
