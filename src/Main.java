@@ -33,11 +33,11 @@ public class Main { //    En klass som räknar raderna, har koll på antalet tec
             }
 
             System.out.println("Amount of Rows is: " + myInput_Words.GetRows() + " and Amount of words in current Row is: " + myInput_Words.GetWordsCount() + " and Total Amount of words is: " + myInput_Words.GetTotalWordsCount());
-            System.out.println("Amount of Chars in last row (before stop row) is: " + myInput_Words.GetChars() + "   Total Amount of Chars in all rows (exclusive stop) is: " + myInput_Words.GetTotalChars());//  + " and Amount of words in current Row is: " + myInput_Words.GetWordsCount() + " and Total Amount of words in current Row is: " + myInput_Words.GetTotalWordsCount());
-            System.out.println("Longest word in last row (before stop row) is: " + myInput_Words.GetLongestWords() + " and the length is " + myInput_Words.GetLongestWordsLength());//Total Amount of Chars in all rows (exclusive stop) is: " + myInput_Words.GetTotalChars());//  + " and Amount of words in current Row is: " + myInput_Words.GetWordsCount() + " and Total Amount of words in current Row is: " + myInput_Words.GetTotalWordsCount());
-            System.out.println("Longest word in ALL rows (before stop row) is: " + myInput_Words.GetTotalLongestWords()); //+ " and the length is " + myInput_Words.GetLongestWordsLength());//Total Amount of Chars in all rows (exclusive stop) is: " + myInput_Words.GetTotalChars());//  + " and Amount of words in current Row is: " + myInput_Words.GetWordsCount() + " and Total Amount of words in current Row is: " + myInput_Words.GetTotalWordsCount());
+            System.out.println("Amount of Chars in last row (before stop row) is: " + myInput_Words.GetChars() + "   Total Amount of Chars in all rows (exclusive stop) is: " + myInput_Words.GetTotalChars());
+            System.out.println("Longest word in last row (before stop row) is: " + myInput_Words.GetLongestWords() + " and the length is " + myInput_Words.GetLongestWordsLength());
+            System.out.println("Longest word in ALL rows (before stop row) is: " + myInput_Words.GetTotalLongestWords() + " and the length is " + myInput_Words.GetTotalLongestLength());
 
-            //System.exit(0);
+            System.exit(0);
         }
 
 //public string getLongestWord()a
