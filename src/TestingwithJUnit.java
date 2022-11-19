@@ -13,6 +13,7 @@
         @Test
         public void TestGetRows2() {
             Read myInput_Words = new Read();
+            myInput_Words.SetInput("some text");
             int Actual_Result = myInput_Words.GetRows();
             int Expected_Result = 1;
             Assert.assertEquals(Actual_Result, Expected_Result);
@@ -45,11 +46,13 @@
         @Test
         public void TestGetWordsCount2() {
             Read myInput_Words = new Read();
+
             int Actual_Result = myInput_Words.GetWordsCount();
             int Expected_Result = 1;
             Assert.assertEquals(Actual_Result, Expected_Result);
         }
 
+        @Test
         public void TestGetWordsCount3() {
             Read myInput_Words = new Read();
             myInput_Words.SetWords("test");
@@ -82,7 +85,7 @@
             int Expected_Result = 1;
             Assert.assertEquals(Actual_Result, Expected_Result);
         }
-
+        @Test
         public void TestGetCharCount3() {
             Read myInput_Words = new Read();
             myInput_Words.SetWords("test");
@@ -91,7 +94,7 @@
             int Expected_Result = 1;
             Assert.assertEquals(Actual_Result, Expected_Result);
         }
-
+        @Test
         public void TestGetCharCount4() {
             Read myInput_Words = new Read();
             myInput_Words.SetTotalChars("test");

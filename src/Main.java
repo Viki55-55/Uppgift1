@@ -14,6 +14,7 @@ public class Main { //    En klass som räknar raderna, har koll på antalet tec
 
             while(!InputReader.equals("Stop") & !InputReader.equals("stop"))
             {
+                //Slå ihop alla dessa till en metod
                 myInput_Words.SetInput(InputReader);
                 myInput_Words.SetWords(InputReader);
                 myInput_Words.SetTotalWords(InputReader);
@@ -36,4 +37,5 @@ public class Main { //    En klass som räknar raderna, har koll på antalet tec
 
             }
         }
+
    }
